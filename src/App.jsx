@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -15,14 +15,10 @@ import ScrollProgress from './components/ScrollProgress';
 import FloatingSocial from './components/FloatingSocial';
 import BackToTop from './components/BackToTop';
 import BackgroundBlobs from './components/BackgroundBlobs';
-import Loader from './components/Loader';
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-
   return (
     <>
-      {loading && <Loader onComplete={() => setLoading(false)} />}
       <ScrollProgress />
       <CustomCursor />
       <BackgroundBlobs />
