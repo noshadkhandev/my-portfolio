@@ -1,0 +1,54 @@
+import React from 'react';
+
+const floatLinks = [
+  {
+    href: 'https://wa.me/923315200501',
+    label: 'WhatsApp',
+    icon: 'fa-brands fa-whatsapp',
+  },
+  {
+    href: 'https://www.linkedin.com/in/nowshad-ahmad-451988420?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+    label: 'LinkedIn',
+    icon: 'fa-brands fa-linkedin-in',
+  },
+  {
+    href: 'https://github.com/noshadkhandev',
+    label: 'GitHub',
+    icon: 'fa-brands fa-github',
+  },
+  {
+    href: 'https://www.facebook.com/nowshad.ahmad.7355',
+    label: 'Facebook',
+    icon: 'fa-brands fa-facebook-f',
+  },
+  {
+    href: 'tel:+923315200501',
+    label: 'Call',
+    icon: 'fa-solid fa-phone',
+  },
+  {
+    href: 'mailto:nowshadkhan9901@gmail.com',
+    label: 'Email',
+    icon: 'fa-solid fa-envelope',
+  },
+];
+
+export default function FloatingSocial() {
+  return (
+    <div className="float-social" aria-label="Social links sidebar">
+      {floatLinks.map((item, index) => (
+        <a
+          key={index}
+          href={item.href}
+          target={item.href.startsWith('http') ? '_blank' : undefined}
+          rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+          aria-label={item.label}
+          data-cursor="pointer"
+        >
+          <i className={item.icon} aria-hidden="true"></i>
+        </a>
+      ))}
+      <span className="float-line" aria-hidden="true"></span>
+    </div>
+  );
+}

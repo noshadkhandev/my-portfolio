@@ -159,11 +159,8 @@ section, header, footer{ position:relative; z-index:1; }
 
 /* -------------------- Section shared -------------------- */
 section{ padding:130px 0; }
-.section-eyebrow{
-  font-family:var(--font-mono); font-size:.8rem; letter-spacing:3px; text-transform:uppercase;
-  color:var(--cyan); margin-bottom:14px; display:flex; align-items:center; gap:10px;
-}
-.section-eyebrow::before{ content:''; width:24px; height:1.5px; background:var(--cyan); display:inline-block; }
+
+
 .section-title{ font-size:clamp(1.9rem, 3.6vw, 3rem); max-width:680px; margin-bottom:60px; }
 
 .glass-card{
@@ -349,8 +346,7 @@ section{ padding:130px 0; }
 
 /* -------------------- Skills -------------------- */
 .skills-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:70px; }
-.skills-col-title{ display:flex; align-items:center; gap:10px; font-size:1.1rem; margin-bottom:28px; color:var(--text); }
-.skills-col-title i{ color:var(--cyan); }
+
 
 .skill-bar{ margin-bottom:22px; }
 .skill-bar-top{ display:flex; justify-content:space-between; font-size:.88rem; margin-bottom:9px; color:var(--text-dim); }
